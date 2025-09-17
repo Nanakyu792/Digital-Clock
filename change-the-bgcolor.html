@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            --value: white;
+            background-color: var(--value);
+            transition: background-color 1s;
+        }
+    </style>
+</head>
+<body>
+    <button id="switch">
+        Toggle
+    </button>
+    <script>
+        let body = 
+        document.querySelector("body");
+        let isToggled = false;
+
+        body.onclick = () => {
+            isToggled = !isToggled;
+            body.style.setProperty("--value",
+                isToggled ? "black" : "white"
+            );
+        }
+    </script>
+    <input type="text" /><p>type="text</p><br>
+    <input type="password" /><p>type="password"</p>
+    <input type="number" /><p>type="number"</p>
+    <input type="checkbox" /><p>type="checkbox"</p>
+    <input type="color" /><p>type="color"</p>
+    <input type="date" /><p>type="date"</p>
+    <input type="time" /><p>type="time"</p>
+    <input type="search" /><p>type="search"</p>
+    <input type="file" /><p>type="file"</p>
+    <input type="range" /><p>type="range"</p>
+    <input type="radio" /><p>type="radio"</p>
+    <input type="submit" /><p>type="submit"</p>
+    <input type="week" /><p>type="week"</p>
+    <br>
+    <h1>input最高</h1>
+</body>
+</html>
